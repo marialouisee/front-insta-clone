@@ -1,0 +1,12 @@
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        height: 35px;
+    }
+    input {
+        height: 20px;
+    }
+}
