@@ -1,0 +1,44 @@
+.info {
+    display: flex;
+  
+    .light {
+        font-weight: 400;
+    }
+    
+    img {
+        width: 160px;
+        height: 160px;
+        border-radius: 90%;
+        padding: 10px 80px;
+        box-sizing: content-box;
+
+    }   
+    .infoContainer {
+        margin-top: 30px;
+        button {
+            @include button;
+            @include dark;
+        }
+        .name {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 30px;
+            @include padding-info;
+        }
+        .stats {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 30px;
+            @include padding-info;
+
+
+            div{
+                display: flex;
+                flex-direction: row;
+            }
+            
+        }
+    }
+}

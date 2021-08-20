@@ -1,21 +1,21 @@
 import React from 'react';
+import logo from '../../images/Instagram_logo.svg'
 
 const Header = () => {
-    return (
-        <div className='header'>
+  return (
+    <div className="header">
+      <div className='padding'>
+        <img src={logo} alt="insta logo" />
 
-            <img src={process.env.PUBLIC_URL + '/img/Instagram_logo.svg'} alt="insta logo" />
+        <input type="text" placeholder='search' />
 
-            <input type="text"/>
-
-            <div>
-                <button>Log In</button>
-                <button>Sign Up</button>
-            </div>
-
-            
+        <div className="buttons">
+          <button>Log In</button>
+          <button>Sign Up</button>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Header
+export default Header;

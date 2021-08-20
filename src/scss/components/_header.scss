@@ -1,12 +1,39 @@
 .header {
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    img {
-        height: 35px;
+    height: 60px;
+    border-bottom: 1px solid $light-grey;
+    z-index: 100;
+    .padding {
+        height: 100%;
+        padding: 0 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 40px;
+        }
+        input {
+            height: 20px;
+            border: 1px solid $light-grey;
+            height: 30px;
+            width: 200px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        button{
+            @include button
+        }
+        .buttons {
+            :first-child{
+                @include dark
+            }
+            :last-child{
+                @include light
+            }
+        }
+
     }
-    input {
-        height: 20px;
-    }
+
+    
 }
